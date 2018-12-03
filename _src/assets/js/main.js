@@ -16,7 +16,6 @@ console.log(myRandomNumber);
 */
 
 const tryBtn = document.querySelector('.btn__number');
-
 const playerNumber = document.querySelector('.box__number');
 
 function showPlayerNumber () {
@@ -26,22 +25,24 @@ function showPlayerNumber () {
 } 
 const myPlayerNumber = showPlayerNumber();
 
+
 tryBtn.addEventListener('click', showPlayerNumber);
 
 /* Tercer paso, comparar el número que el usuario ha escrito en el input con el número aleatorio, y pintar el feedback correspondiente en la pantalla
 */
 const textbox = document.querySelector('.answer__number');
 
-/* primera condición cuando el número sea el mismo*/
-
+/*
 if (myRandomNumber === myPlayerNumber) {
     textbox.innerHTML = "HAS GANADO";
 } else if (myPlayerNumber > myRandomNumber) {
     textbox.innerHTML = "Demasiado alto";
 } else if (myPlayerNumber < myRandomNumber) {
     textbox.innerHTML = "Demasiado bajo";
+} else {
+    textbox.innerHTML = textbox.innerHTML;
 }
-
+*/
 
 
 
