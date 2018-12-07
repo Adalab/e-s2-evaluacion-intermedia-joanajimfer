@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Adalab Web Starter Kit</title>
-  <link rel="icon" href="favicon.png"/>
-	<link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="UTF-8">
+  <title>Evaluación intermedia S2</title>
+  <link rel="icon" href="favicon.png" />
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-  <div class="page">
-    <partial src="_header.html" label="Header"></partial>
-    <partial src="_main.html" label="Main"></partial>
-    <script type="text/javascript" src="assets/js/main.js"> </script>
+  <main class="page__main">
+      <div class="div_counter">
+          <span class="play__counter">0</span>
+        </div>
+    <section class="main_section">
+      <h1 class="tittle">Adivina el número</h1>
+      <p class="main_text">Introduce aquí tu número</p>
+      <input type="number" class="box__number">
+      <button class="btn__number">Prueba</button>
+      <div class="interactive_box">
+        <p class="answer__number">Escribe un número y dale a prueba</p>
+      </div>
+    </section>
+    
+  </main>
+
+  <script type="text/javascript" src="assets/js/main.js"> </script>
   </div>
 </body>
+
 </html>

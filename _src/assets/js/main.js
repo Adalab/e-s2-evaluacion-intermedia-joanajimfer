@@ -9,6 +9,7 @@ console.log(myRandomNumber);
   
 
 const tryBtn = document.querySelector('.btn__number');
+
 const playerNumber = document.querySelector('.box__number');
 const writtingPlace = document.querySelector('.answer__number');
 let counter = document.querySelector('.play__counter');
@@ -16,11 +17,11 @@ let counter = document.querySelector('.play__counter');
 function showPlayerNumber () {
     const writePlayerNumber = playerNumber.value;
     if (parseInt(writePlayerNumber) === myRandomNumber) {
-        writtingPlace.innerHTML = 'Lo has conseguido';
+        writtingPlace.innerHTML = '¡HAS GANADO, CAMPEONA!';
     } else if (parseInt(writePlayerNumber) > myRandomNumber) {
-        writtingPlace.innerHTML = 'Es un número muy alto';
+        writtingPlace.innerHTML = 'Demasiado alto';
     } else if (parseInt(writePlayerNumber) < myRandomNumber) {
-        writtingPlace.innerHTML = 'Es un número muy bajo';
+        writtingPlace.innerHTML = 'Demasiado bajo';
     };
     counter.innerHTML = parseInt(counter.innerHTML) + 1;
     return console.log(writePlayerNumber);
